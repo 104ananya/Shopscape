@@ -1,0 +1,170 @@
+/* header primary */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(14deg, #f7f7f7, #fabcbc);
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0%;
+    border: 1px solid transparent;
+}
+
+.logoh {
+    margin-left: 30px;
+}
+
+.logoh img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.colh {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    overflow: hidden;
+    width: fit-content;
+    margin: 5px;
+    margin-left: 1000px;
+}
+
+.colh a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    /* margin: 5px, 20px; */
+    text-decoration: none;
+    font-size: 21px;
+    background-color: #333;
+}
+
+.colh a:hover {
+    background-color: rgb(228, 219, 95);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cartheading {
+    background: linear-gradient(white, rgb(228, 219, 95));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.titlec {
+    text-align: left;
+}
+
+.carttable {
+    padding: 80px 70px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead {
+    padding: 50px;
+}
+
+.cartinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartinfo img {
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.cartdetail {
+    padding-top: 45px;
+    padding-left: 10px;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+td input {
+    width: 50px;
+    padding: 5px;
+    /* margin-left: 15px; */
+    transform: translateX(75%);
+}
+
+td a {
+    color: red;
+    text-decoration: none;
+}
+
+.cartdetail a {
+    float: right;
+    padding-top: 70px;
+    text-decoration: none;
+}
+
+small {
+    color: rgb(13, 185, 13);
+    font-weight: bold;
+}
+
+.tbody {
+    font-size: 19px;
+}
+
+.total {
+    text-align: right;
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 0px;
+}
+
+.total h2 {
+    border-bottom: 1px solid #a94442;
+}
+
+.order {
+    padding-right: 60px;
+}
+
+.order h2 {
+    background-color: rgb(228, 219, 95);
+    color: black;
+    margin: 20px;
+    margin-right: 0px;
+    padding: 12px;
+    width: 250px;
+    border-radius: 20%;
+    float: right;
+}
+
+.order h2:hover {
+    background: #fabcbc;
+    color: black;
+}
+
+.order a {
+    text-align: center;
+    text-decoration: none;
+}

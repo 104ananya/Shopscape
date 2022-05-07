@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>BILLING</title>
+
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="men.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <div class="logoh">
+            <img src="image/mainlogo01.png" alt="">
+        </div>
+        <div class="colh">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> <br> </a> <br>
+            <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i> <br></a> <br>
+            <a href=""><i class="fa fa-heart" aria-hidden="true"></i> <br> </a> <br>
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <br> </a> <br>
+            <a href=""><i class="fa fa-address-book" aria-hidden="true"></i> <br> </a> <br>
+            <a href="bill.html"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> <br> </a> <br>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form name="payment" method="POST">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your Full Name">
+                            <label for="email"><i class="fa fa-envelope"></i> Email Id</label>
+                            <input type="email" id="email" name="email" placeholder="abc@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="Your Billing Address">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="City">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="State">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">PIN</label>
+                                    <input type="text" id="zip" name="zip" placeholder="123456">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Card holder name">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <select id="expmonth" name="expmonth">
+                                    <option value="00">--month---</option>
+                                    <option value="Jan">January</option>
+                                    <option value="Feb">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="Aug">August</option>
+                                    <option value="Sept">September</option>
+                                    <option value="Oct">October</option>
+                                    <option value="Nov">November</option>
+                                    <option value="Dec">December</option>
+                                </select>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2030">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price" style="color:black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                        </span>
+                </h4>
+                <p>
+                    <a href="#"><img src="images/buy-1.jpg" alt=""></a> <span class="price"> &#8377; 552</span></p>
+                <p>
+                    <a href="#"><img src="images/buy-2.jpg" alt=""></a> <span class="price">&#8377; 600</span></p>
+                <p>
+                    <a href="#"><img src="images/buy-3.jpg" alt=""></a> <span class="price">&#8377; 800</span></p>
+
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>&#8377; 1952</b></span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="row4">
+            <div class="col6">
+                <ul type="none">
+                    <li>ABOUT </li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">testimonial</a></li>
+                    <li><a href="">Press</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="col6">
+                <ul type="none">
+                    <li>HELP </li>
+                    <li><a href="">Payments</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Cancellation</a></li>
+                    <li><a href="">Exchange</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Report </a></li>
+
+                </ul>
+            </div>
+
+            <div class="col6">
+                <ul type="none">
+                    <li>POLICY</li>
+                    <li><a href="">Return</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Sitemap</a></li>
+                    <li><a href="">T & C</a></li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="col6">
+                <ul type="none">
+                    <li>SOCIAL MEDIA</li>
+                    <li><a href="" style="font-size: 25px;"><i class="fa fa-facebook-official"
+                                    aria-hidden="true"></i></a></li>
+                    <li><a href="" style="font-size: 25px;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="" style="font-size: 25px;"><i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="" style="font-size: 25px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
+
+
+                </ul>
+
+            </div>
+
+            <div class="vl"></div>
+
+
+            <div class="col6" id="addr">
+                <ul type="none">
+                    <li> OFFICIAL ADDRESS </li>
+                </ul>
+
+                <p style="font-family: -webkit-pictograph; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facilis molestiae! Et impedit ducimus odio enim hic, explicabo quasi doloremque repudiandae.
+                </p>
+            </div>
+        </div>
+
+        <div class="row5">
+            <div class="col7">
+                <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                <h3>24&times;7</h2>
+                    <p>Have a query and need help? <br> <a href=""> Click here.</a></p>
+
+            </div>
+            <div class="col7">
+                <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                <h3>Shopscape Trust</h3>
+                <p>Your money is yours! All refunds come with no question asked guarantee.</p>
+
+
+            </div>
+            <div class="col7">
+                <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+                <h3>100% Assurance</h3>
+                <p>At Shopscape, we provide 100% assurance. If you have any issue, your money is immediately refunded. Sit back and enjoy your shopping</p>
+            </div>
+            <div class="col7">
+                <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                <h3>Our Promise</h3>
+                <p>Happiness is guaranteed at Shopscape. If we fall short of your expectations, give us a shout.</p>
+            </div>
+            <div class="col7">
+
+            </div>
+        </div>
+
+        <div class="row6">
+            <div class="col8">
+                <h4> Experience Shopscape App <br> on mobile</h4>
+                <a href=""><img src="image/logo-goggle01.png" alt=""></a> <br>
+                <a href=""><img src="image/logo-apple01.png" alt=""></a>
+            </div>
+            <div class="col8">
+                <h4>SUBSCRIBE US</h4>
+                <input type="email" placeholder="Your Email Id" id="subid">
+                <button type="submit" id="sub">SUBSCRIBE</button>
+            </div>
+            <div class="col8">
+                <h4>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> ANANYA</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxCqF4mIduSMrG-cGaymApFOOvAvYmDu4kCjztkkwAZMyh9MvOfrbjBu0ardLvGr4C9/exec'
+        const form = document.forms['payment']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Shopping with us!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
